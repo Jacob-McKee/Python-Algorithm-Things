@@ -1,16 +1,13 @@
-from typing import List
-
-
 class Solution:
     # Using list splicing and alternating list adding
-    def shuffle(self, nums: List[int], n: int) -> List[int]:
+    def shuffle(self, nums: list[int], n: int) -> list[int]:
         result = [None] * len(nums)
         result[::2] = nums[: int(len(nums) / 2)]
         result[1::2] = nums[int(len(nums) / 2):]
 
         return result
 
-    def shuffle_with_append(self, nums: List[int], n: int) -> List[int]:
+    def shuffle_with_append(self, nums: list[int], n: int) -> list[int]:
         l = []
 
         for i in range(n):
