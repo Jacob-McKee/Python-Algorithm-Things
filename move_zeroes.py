@@ -12,3 +12,8 @@ class Solution:
                 stop_index -= 1
             else:
                 index += 1
+
+    def moveZeroesThreeLine(self, nums: list[int]) -> None:
+        num_zeroes = nums.count(0)
+        nums[:] = [i for i in nums if i != 0]
+        nums += [0] * num_zeroes
