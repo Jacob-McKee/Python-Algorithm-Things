@@ -23,6 +23,6 @@ class Solution:
 
         for i, j in nums.items():
             for k in range(0, len(j), i):
-                res.append(j[k:k + i])
+                res.append(j[k : k + i])
 
         return res
