@@ -1,5 +1,5 @@
 class Solution:
-    def pivotIndex(self, nums: List[int]) -> int:
+    def pivotIndex(self, nums: list[int]) -> int:
         left = 0
         right = sum(nums)
 
